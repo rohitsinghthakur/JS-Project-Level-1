@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100dvw;
+}
+
+.main {
+
+  min-height: 100vh;
+  width: 100dvw;
+  padding: 10px;
+  animation: colorChange 15s infinite;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  font-family: sans-serif;
+}
+.header .head-text {
+
+  width: 70%;
+  text-align: center;
+}
+
+.head-text h1 {
+  font-size: 40px;
+}
+
+.input {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.input input {
+    text-align: center;
+    padding: 10px;
+    width: 50px;
+    /* display: none; */
+}
+.input button {
+  padding: 10px;
+  width: 100px;
+  border-radius: 15px;
+  background: transparent;
+  color: #fff;
+}
+
+.output {
+  max-width: 90vw;
+  min-width: 70vw;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 1px 1px 12px 1px;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+}
+.output p {
+  /* background-color: #7b0909;  */
+  width: fit-content;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+  
+  
+}
+
+
+@keyframes colorChange {
+  0% {
+    background: rgb(126, 126, 240);
+  }
+  50% {
+    background: rgb(58, 58, 120);
+  }
+  100% {
+    background:  rgb(126, 126, 240);
+  }
+}
+
+
+@media (max-width:600px) {
+  .head-text p{
+    display: none;
+  }
+  .main{
+    gap: 10px;
+  }
+}
